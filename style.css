@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --color: #146AB7;
@@ -108,6 +107,8 @@ nav a {
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .main-inner-home .right-content-img::before {
@@ -194,6 +195,8 @@ nav a {
   display: block;
   height: auto;
   object-fit: cover;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .services-content {
@@ -275,6 +278,8 @@ nav a {
 
 .main-inner-appointment img {
   width: 100%;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .right-appointment-content {
@@ -1753,4 +1758,32 @@ nav a {
 .alto-contraste input::placeholder,
 .alto-contraste textarea::placeholder {
   color: #ccc !important;
+}
+
+/* Otimização para animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Otimização para scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Otimização para imagens responsivas */
+picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
