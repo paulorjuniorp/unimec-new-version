@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre - Hospital UNIMEC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Botão de acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Menu de acessibilidade"><i class="fas fa-eye"></i></button>
+  <div id="menu-acessibilidade" class="oculto" role="navigation" aria-label="Menu de acessibilidade">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+<header>
+  <div class="logo"><img src="./logo.png" style="width: 100px;" alt="Logo hospital UNIMEC"></div>
+  <nav class="navbar">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="especialidades.html">Especialidades</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="menu-icons">
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <div id="searchbox" class="fas fa-search"></div>
+  </div>
+</header>
+
+<main class="sobre-modern">
+  <section class="sobre-modern">
+  <div class="hero-sobre">
+    <div class="hero-content">
+      <h3>BEM-VINDO AO HOSPITAL UNIMEC</h3>
+      <h1>Cuidado Humano com Excelência</h1>
+
+      <div class="features">
+        <ul>
+          <li>Atendimento Humanizado</li>
+          <li>Equipe Especializada</li>
+          <li>Tecnologia Avançada</li>
+          <li>Conforto e Segurança</li>
+          <li>Compromisso com a Saúde</li>
+          <li>Tradição e Inovação</li>
+        </ul>
+      </div>
+
+      <p>O Hospital UNIMEC é referência em saúde humanizada, atuando desde 1976 com foco na excelência, inovação e respeito à vida. Estamos em constante evolução para atender melhor você.</p>
+    </div>
+
+    <div class="hero-image">
+      <img src="./images/antiga-fachada-2.avif" alt="Fachada hospital unimec em 1976">
+    </div>
+  </div>
+
+  <div class="info-boxes">
+    <h3>Quem Somos</h3>
+    
+      <p>O Hospital UNIMEC (Unidade Médico Cirúrgica Ltda.) é referência em saúde humanizada em Vitória da Conquista e região. Fundado em 1976 por 17 sócios médicos, iniciou suas atividades no antigo Aliança Palace Hotel, sendo posteriormente transferido para a Rua Góes Calmon, onde permanece até hoje.
+
+Ao longo dos anos, o hospital vem se modernizando e ampliando sua estrutura física e serviços, como a inauguração de novos leitos, ambulatórios especializados e melhorias constantes nas instalações. Atualmente, conta com mais de 30 sócios, atende a pacientes do SUS, de convênios e particulares em mais de 30 municípios.
+
+Somos uma instituição privada que alia tradição e inovação com foco na excelência, ética e no compromisso com a vida. Nosso modelo de gestão é estruturado por uma diretoria executiva eleita anualmente em assembleia geral.
+
+Nossa missão é promover a saúde de forma sustentável e humanizada, buscando a excelência por meio da tecnologia, do ensino e da pesquisa, garantindo satisfação e confiança a clientes e colaboradores.
+
+Nossa visão é ser reconhecido como referência nacional em assistência humanizada, oferecendo cuidado com qualidade, respeito e responsabilidade.</p>
+    <div class="box-container">
+      <div class="box">
+        <h4>Missão</h4>
+        <p>Promover a saúde de forma sustentável e humanizada, buscando excelência por meio da tecnologia, ensino e pesquisa.</p>
+      </div>
+      <div class="box">
+        <h4>Visão</h4>
+        <p>Ser reconhecido como referência em assistência humanizada no Brasil.</p>
+      </div>
+      <div class="box">
+        <h4>Valores</h4>
+        <ul>
+          <li>Ética e Transparência</li>
+          <li>Responsabilidade social</li>
+          <li>Valorização das pessoas</li>
+          <li>Inovação com propósito</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>UNIMEC</h3>
+      <p><i class="fa-solid fa-phone"></i> 77 2101-4600</p>
+      <p><i class="fa-solid fa-location-dot"></i> Rua Góes Calmon, 335 - Centro -Vitória da Conquista-BA</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Links rápidos</h3>
+      <ul>
+        <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hospitalunimec/" target="_blank">
+            Instagram</a>
+        </li>
+        <li><i class="fa-brands fa-whatsapp"></i><a
+            href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank">
+            Whatsapp</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-social">
+    Copyright @ 2025. IFBA | Otimização de Software para Web
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especialidades - Hospital UNIMEC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Botão de acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Menu de acessibilidade"><i class="fas fa-eye"></i></button>
+  <div id="menu-acessibilidade" class="oculto" role="navigation" aria-label="Menu de acessibilidade">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <header>
+    <div class="logo"><img src="images/logo.png" style="width: 100px;" alt="Logo hospital UNIMEC"></div>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="especialidades.html">Especialidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="menu-icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="searchbox" class="fas fa-search"></div>
+    </div>
+  </header>
+
+  <div class="specialties-page">
+    <div class="specialties-page-heading">
+      <h1>Nossas <span>Especialidades</span></h1>
+      <p>Contamos com uma equipe médica especializada em diversas áreas da medicina</p>
+    </div>
+
+    <div class="specialties-grid">
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h2>Cardiologia</h2>
+        <p>Especialidade médica que se ocupa do diagnóstico e tratamento das doenças do coração e do sistema cardiovascular.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Eletrocardiograma</li>
+            <li>Ecocardiograma</li>
+            <li>Teste ergométrico</li>
+            <li>Holter 24h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h2>Neurologia</h2>
+        <p>Especialidade médica que trata dos distúrbios estruturais do sistema nervoso central e periférico.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Eletroencefalograma</li>
+            <li>Ressonância cerebral</li>
+            <li>Tomografia cerebral</li>
+            <li>Exames neurológicos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-bone"></i>
+        </div>
+        <h2>Ortopedia</h2>
+        <p>Especialidade médica que cuida das doenças e deformidades dos ossos, músculos, ligamentos e articulações.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Cirurgias ortopédicas</li>
+            <li>Artroscopia</li>
+            <li>Próteses articulares</li>
+            <li>Fisioterapia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-baby"></i>
+        </div>
+        <h2>Pediatria</h2>
+        <p>Especialidade médica dedicada aos cuidados da criança e do adolescente, desde o nascimento até os 18 anos.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Consultas pediátricas</li>
+            <li>Vacinação</li>
+            <li>Puericultura</li>
+            <li>Emergências pediátricas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-female"></i>
+        </div>
+        <h2>Ginecologia e Obstetrícia</h2>
+        <p>Especialidade médica que cuida da saúde da mulher, especialmente do sistema reprodutivo feminino.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Pré-natal</li>
+            <li>Partos</li>
+            <li>Ultrassonografia obstétrica</li>
+            <li>Consultas ginecológicas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h2>Oftalmologia</h2>
+        <p>Especialidade médica que investiga e trata as doenças relacionadas ao olho e à visão.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Exame oftalmológico</li>
+            <li>Cirurgias oculares</li>
+            <li>Tratamento de catarata</li>
+            <li>Correção de miopia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="specialty-card">
+        <div class="specialty-icon">
+          <i class="fas fa-lungs"></i>
+        </div>
+        <h2>Pneumologia</h2>
+        <p>Especialidade médica que se dedica ao diagnóstico e tratamento das doenças do sistema respiratório.</p>
+        <div class="specialty-details">
+          <h3>Procedimentos:</h3>
+          <ul>
+            <li>Espirometria</li>
+            <li>Broncoscopia</li>
+            <li>Ressonância torácica</li>
+            <li>Tratamento de asma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="specialties-info">
+      <div class="info-content">
+        <h2>Agende sua Consulta</h2>
+        <p>Entre em contato conosco para agendar sua consulta com um de nossos especialistas. Nossa equipe está pronta para cuidar de você e sua família.</p>
+        <a href="contato.html" class="cta-button">
+          <i class="fas fa-calendar-alt"></i>
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>UNIMEC</h3>
+        <p><i class="fa-solid fa-phone"></i> 77 2101-4600</p>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Góes Calmon, 335 - Centro -Vitória da Conquista-BA</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hospitalunimec/" target="_blank">
+              Instagram</a>
+          </li>
+          <li><i class="fa-brands fa-whatsapp"></i><a
+              href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank">
+              Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      Copyright @ 2025. IFBA | Otimização de Software para Web
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 

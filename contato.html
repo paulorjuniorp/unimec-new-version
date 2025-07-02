@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Hospital UNIMEC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Botão de acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Menu de acessibilidade"><i class="fas fa-eye"></i></button>
+  <div id="menu-acessibilidade" class="oculto" role="navigation" aria-label="Menu de acessibilidade">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <header>
+    <div class="logo"><img src="images/logo.png" style="width: 100px;" alt="Logo hospital UNIMEC"></div>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Especialidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="menu-icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="searchbox" class="fas fa-search"></div>
+    </div>
+  </header>
+
+  <div class="contact">
+    <div class="contact-heading">
+      <h1>Entre em <span>Contato</span></h1>
+      <p>Estamos aqui para ajudar você. Entre em contato conosco através dos canais abaixo:</p>
+    </div>
+
+    <div class="main-contact">
+      <div class="main-inner-contact">
+        <div class="contact-info">
+          <h2>Informações de Contato</h2>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Telefone</h3>
+              <p>77 2101-4600</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>E-mail</h3>
+              <p>unimec_recgerencia@outlook.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Endereço</h3>
+              <p>Rua Góes Calmon, 335 - Centro<br>Vitória da Conquista - BA</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Horário de Funcionamento</h3>
+              <p>24 horas por dia, 7 dias por semana</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-inner-contact">
+        <div class="contact-form">
+          <h2>Envie sua Mensagem</h2>
+          <form class="formulario-contato">
+            <div class="form-group">
+              <input type="text" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="telefone" placeholder="Seu telefone">
+            </div>
+            <div class="form-group">
+              <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <h2>Redes Sociais</h2>
+      <p>Siga-nos nas redes sociais e fique por dentro das novidades:</p>
+      
+      <div class="social-buttons">
+        <a href="https://www.instagram.com/hospitalunimec/" target="_blank" class="social-btn instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank" class="social-btn whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>UNIMEC</h3>
+        <p><i class="fa-solid fa-phone"></i> 77 2101-4600</p>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Góes Calmon, 335 - Centro -Vitória da Conquista-BA</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hospitalunimec/" target="_blank">
+              Instagram</a>
+          </li>
+          <li><i class="fa-brands fa-whatsapp"></i><a
+              href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank">
+              Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      Copyright @ 2025. IFBA | Otimização de Software para Web
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Leitor de texto -->
+  <script>
+    document.addEventListener('mouseup', () => {
+      const textoSelecionado = window.getSelection().toString().trim();
+      if (textoSelecionado.length > 0) {
+        const fala = new SpeechSynthesisUtterance(textoSelecionado);
+        fala.lang = 'pt-BR';
+        speechSynthesis.speak(fala);
+      }
+    });
+  </script>
+
+  <!-- Atalhos de teclado -->
+  <script>
+    document.addEventListener("keydown", function(e) {
+      if (e.altKey && e.key === "1") {
+        document.querySelector(".formulario-contato input")?.focus();
+      }
+      if (e.altKey && e.key === "2") {
+        document.querySelector(".social-buttons a")?.focus();
+      }
+    });
+  </script>
+</body>
+
+</html>

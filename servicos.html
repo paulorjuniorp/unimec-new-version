@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Hospital UNIMEC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Botão de acessibilidade -->
+  <button id="acessibilidade-btn" aria-label="Menu de acessibilidade"><i class="fas fa-eye"></i></button>
+  <div id="menu-acessibilidade" class="oculto" role="navigation" aria-label="Menu de acessibilidade">
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="resetarAcessibilidade()">Resetar</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <header>
+    <div class="logo"><img src="images/logo.png" style="width: 100px;" alt="Logo hospital UNIMEC"></div>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="especialidades.html">Especialidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="menu-icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="searchbox" class="fas fa-search"></div>
+    </div>
+  </header>
+
+  <div class="services-page">
+    <div class="services-page-heading">
+      <h1>Nossos <span>Serviços</span></h1>
+      <p>Oferecemos uma ampla gama de serviços médicos com qualidade e humanização</p>
+    </div>
+
+    <div class="services-categories">
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h2>Ambulatório</h2>
+        <p>Atendimento ambulatorial especializado com médicos experientes em diversas especialidades médicas.</p>
+        <ul>
+          <li>Consultas médicas</li>
+          <li>Exames preventivos</li>
+          <li>Acompanhamento de pacientes</li>
+          <li>Orientações médicas</li>
+        </ul>
+      </div>
+
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-ambulance"></i>
+        </div>
+        <h2>Pronto-Atendimento</h2>
+        <p>Atendimento de urgência e emergência 24 horas por dia, com equipe médica especializada.</p>
+        <ul>
+          <li>Atendimento de urgência</li>
+          <li>Emergências médicas</li>
+          <li>Traumatologia</li>
+          <li>Pediatria de urgência</li>
+        </ul>
+      </div>
+
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <h2>Exames Laboratoriais</h2>
+        <p>Laboratório moderno com equipamentos de última geração para diagnósticos precisos.</p>
+        <ul>
+          <li>Exames de sangue</li>
+          <li>Exames de urina</li>
+          <li>Exames hormonais</li>
+          <li>Exames específicos</li>
+        </ul>
+      </div>
+
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-x-ray"></i>
+        </div>
+        <h2>Exames de Imagem</h2>
+        <p>Centro de diagnóstico por imagem com tecnologia avançada para exames precisos.</p>
+        <ul>
+          <li>Ressonância Magnética</li>
+          <li>Tomografia Computadorizada</li>
+          <li>Ultrassonografia</li>
+          <li>Raios-X</li>
+        </ul>
+      </div>
+
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-bed"></i>
+        </div>
+        <h2>Internações</h2>
+        <p>Internações clínicas e cirúrgicas com acomodações confortáveis e atendimento humanizado.</p>
+        <ul>
+          <li>Internações clínicas</li>
+          <li>Internações cirúrgicas</li>
+          <li>UTI - Unidade de Terapia Intensiva</li>
+          <li>Enfermaria</li>
+        </ul>
+      </div>
+
+      <div class="service-category">
+        <div class="category-icon">
+          <i class="fas fa-procedures"></i>
+        </div>
+        <h2>Centro Cirúrgico</h2>
+        <p>Centro cirúrgico moderno com salas equipadas para procedimentos de alta complexidade.</p>
+        <ul>
+          <li>Cirurgias eletivas</li>
+          <li>Cirurgias de urgência</li>
+          <li>Procedimentos minimamente invasivos</li>
+          <li>Recuperação pós-operatória</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services-highlight">
+      <div class="highlight-content">
+        <h2>Por que escolher o Hospital UNIMEC?</h2>
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <i class="fas fa-heart"></i>
+            <h3>Atendimento Humanizado</h3>
+            <p>Priorizamos o bem-estar e conforto dos nossos pacientes</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-award"></i>
+            <h3>Excelência Médica</h3>
+            <p>Equipe médica altamente qualificada e experiente</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-cogs"></i>
+            <h3>Tecnologia Avançada</h3>
+            <p>Equipamentos modernos para diagnósticos precisos</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-clock"></i>
+            <h3>Atendimento 24h</h3>
+            <p>Disponibilidade total para emergências e urgências</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>UNIMEC</h3>
+        <p><i class="fa-solid fa-phone"></i> 77 2101-4600</p>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Góes Calmon, 335 - Centro -Vitória da Conquista-BA</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hospitalunimec/" target="_blank">
+              Instagram</a>
+          </li>
+          <li><i class="fa-brands fa-whatsapp"></i><a
+              href="https://api.whatsapp.com/message/PJLHIE777AQME1?autoload=1&app_absent=0" target="_blank">
+              Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      Copyright @ 2025. IFBA | Otimização de Software para Web
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 
